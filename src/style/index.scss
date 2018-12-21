@@ -1,0 +1,54 @@
+#root{
+    .computer{
+        .total-result{
+            width: 280px;
+            height: 92px;
+            padding: 0 5px;
+            font-size: 22px;
+            border: 1px solid black;
+            text-align: right;
+            box-sizing: border-box;
+            .calculate{
+                margin: 10px 0;
+                height: 40px;
+                font-size: 40px;
+            }
+            .calculate-total{
+                height: 30px;
+                font-size: 28px;
+                color: #888181;
+            }
+        }
+        .number-list{
+            display: inline-flex;
+            flex-wrap: wrap;
+            .number-box, .oprator-box{
+                display: inline-flex;
+                flex-wrap: wrap;
+            }
+            .number-box{
+                width: 210px;
+                flex-wrap: wrap-reverse;
+            }
+            .oprator-box{
+                width: 70px;
+            }
+            .input-box{
+                width: 70px;
+                height: 70px;
+                box-sizing: border-box;
+                line-height: 70px;
+                text-align: center;
+                font-size: 22px;
+                background-color: rgb(33, 75, 153);
+                border: 1px solid #efefef;
+                color: white;
+                border-radius: 3px;
+                cursor: pointer;
+                &:hover{
+                    background-color: rgb(250, 52, 118);
+                }
+            }
+        }
+    }
+}
